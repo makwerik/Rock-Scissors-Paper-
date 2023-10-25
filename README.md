@@ -1,5 +1,6 @@
 # Rock-Scissors-Paper
-[Play.webm](https://github.com/makwerik/Rock-Scissors-Paper/assets/90283430/e02cd6ea-7298-4479-84c8-ee1fb2dfe29c)
+
+[play.webm](https://github.com/makwerik/Rock-Scissors-Paper-/assets/90283430/12a8a3bc-8352-4c74-a5ec-a08cec4db8d5)
 
 <h1>Камень ножницы бумага против бота</h1>
 <h3>Использование</h3>
