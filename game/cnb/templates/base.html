@@ -1,0 +1,33 @@
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        .credits {
+            font-size: 16px;
+            color: #666;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .credits a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        .credits a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+    <div class="credits">
+        <p>Made by makwerik</p>
+        <p>The page style is set by GPT</p>
+    </div>
+</body>
+</html>

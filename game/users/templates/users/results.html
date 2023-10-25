@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Камень-Ножницы-Бумага{% endblock %}
+
+{% block body %}
+<div class="container" style="position: relative; text-align: center; background: none; padding: 20px; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-image: url('{% static 'cnb/img/vice_city_game.jpg' %}'); background-size: cover; background-position: center;">
+
+    <a class="results-link" href="{% url 'game' %}" style="position: absolute; top: 20px; left: 20px; text-decoration: none; color: #00BFFF; font-size: 40px;">Играть</a>
+    <h1 style="font-family: 'Comic Sans MS', cursive; font-size: 72px; color: #D8BFD8;">Результаты:</h1>
+    <table style="font-family: 'Comic Sans MS', cursive; font-size: 40px; color: #D8BFD8; background-color: #000; border-collapse: collapse; width: 80%; margin: 40px auto;">
+        <tr>
+            <th>Имя</th>
+            <th>Очки игрока</th>
+            <th>Очки компьютера</th>
+        </tr>
+        {% for info in show %}
+            <tr>
+                <td>{{ info.name }}</td>
+                <td>{{ info.score_user }}</td>
+                <td>{{ info.score_pc }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
